@@ -46,7 +46,7 @@ class App extends Component {
                 {verbs.map(verb => {
                   const {normal, count} = verb
                   return (
-                    <li key={normal}>{normal} {count > 1 && `(x${count})`}</li>
+                    <li key={normal} style={{textAlign: 'left'}}>{normal} {count > 1 && `(x${count})`}</li>
                   )
                 })}
               </ul>
